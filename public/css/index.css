@@ -1,7 +1,7 @@
 #chart-line div,
 #chart-map div {
   margin-top: 2%;
-  padding: 10px;
+  padding-top: 1%;
   border-radius: 5px;
 }
 #chartdiv {
