@@ -31,7 +31,7 @@
         <div class="row" id="chart-line">
             <div class="col-md-8 offset-md-2 bg-light">
                 <p>{{titleLine}}</p>
-                <div class="input-group">
+                <div class="input-group" style="margin-bottom: 1%">
                     <select v-model="valueLineChart" class="custom-select" id="inputGroupSelect01">
                         <option v-for="opt in optExpert">{{opt.value}}</option>
                     </select>
@@ -48,13 +48,13 @@
         <div class="row" id="chart-map" style="margin-bottom: 5%;">
             <div class="col-md-8 offset-md-2 bg-light">
                 <p>{{titleMap}}</p>
-                <div class="input-group">
+                <div class="input-group" style="margin-bottom: 1%">
                     <select v-model="valueMapChart" class="custom-select" id="inputGroupSelect01">
                         <option selected>Choose...</option>
                         <option v-for="opt in optYear">{{opt.value}}</option>
                     </select>
                 </div>
-                <button type="button" class="btn btn-primary btn-sm mx-auto d-block">Cek Laporan</button>
+                <button @click="checkMapChart(valueMapChart)" type="button" class="btn btn-primary btn-sm mx-auto d-block">Cek Laporan</button>
                 <div id="chartdiv"></div>
             </div>
         </div>

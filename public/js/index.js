@@ -21,7 +21,8 @@ var app = new Vue({
     ],
     valueLineChart: "DOKTER SPESIALIS",
     valueMapChart: "2014",
-    dataLineChart: null
+    dataLineChart: null,
+    dataMapChart: null
   },
   methods: {
     checkLineChart: function(selected) {
@@ -157,7 +158,7 @@ var app = new Vue({
             {
               data: [349, 728, 924, 915],
               label: "KALIMANTAN SELATAN",
-              borderColor: "#f44336",
+              borderColor: "#ef5350",
               fill: false
             },
             {
@@ -367,7 +368,7 @@ var app = new Vue({
             {
               data: [771, 706, 718, 910],
               label: "KALIMANTAN SELATAN",
-              borderColor: "#f44336",
+              borderColor: "#ef5350",
               fill: false
             },
             {
@@ -457,7 +458,1198 @@ var app = new Vue({
         case "NAKES LAINYA":
           break;
         case "TENAGA PENUNJANG":
+          this.dataLineChart = [
+            {
+              data: [4996, 5626, 6559, 7978],
+              label: "ACEH",
+              borderColor: "#3e95cd",
+              fill: false
+            },
+            {
+              data: [8069, 9599, 11607, 11015],
+              label: "SUMATERA UTARA",
+              borderColor: "#8e5ea2",
+              fill: false
+            },
+            {
+              data: [3837, 5172, 6286, 6891],
+              label: "SUMATERA BARAT",
+              borderColor: "#3cba9f",
+              fill: false
+            },
+            {
+              data: [3962, 5161, 7075, 7576],
+              label: "RIAU",
+              borderColor: "#e8c3b9",
+              fill: false
+            },
+            {
+              data: [3169, 2950, 4228, 4752],
+              label: "JAMBI",
+              borderColor: "#c45850",
+              fill: false
+            },
+            {
+              data: [5687, 8052, 9185, 10065],
+              label: "SUMATERA SELATAN",
+              borderColor: "#a05c5c",
+              fill: false
+            },
+            {
+              data: [1728, 1927, 2522, 3102],
+              label: "BENGKULU",
+              borderColor: "#ffebee",
+              fill: false
+            },
+            {
+              data: [3353, 4406, 4510, 7485],
+              label: "LAMPUNG",
+              borderColor: "#fce4ec",
+              fill: false
+            },
+            {
+              data: [1458, 2368, 2941, 3153],
+              label: "KEPULAUAN BANGKA BELITUNG",
+              borderColor: "#f3e5f5",
+              fill: false
+            },
+            {
+              data: [1620, 2115, 2605, 3360],
+              label: "KEPULAUAN RIAU",
+              borderColor: "#ffcdd2",
+              fill: false
+            },
+            {
+              data: [16078, 21570, 25217, 29069],
+              label: "DKI JAKARTA",
+              borderColor: "#f8bbd0",
+              fill: false
+            },
+            {
+              data: [23609, 28659, 35208, 37372],
+              label: "JAWA BARAT",
+              borderColor: "#e1bee7",
+              fill: false
+            },
+            {
+              data: [30778, 32492, 31729, 36311],
+              label: "JAWA TENGAH",
+              borderColor: "#ef9a9a",
+              fill: false
+            },
+            {
+              data: [7046, 6457, 5898, 8137],
+              label: "DI YOGYAKARTA",
+              borderColor: "#f48fb1",
+              fill: false
+            },
+            {
+              data: [31095, 34569, 36755, 43165],
+              label: "JAWA TIMUR",
+              borderColor: "#ce93d8",
+              fill: false
+            },
+            {
+              data: [4715, 8257, 9355, 9970],
+              label: "BANTEN",
+              borderColor: "#e57373",
+              fill: false
+            },
+            {
+              data: [6954, 7301, 7852, 9728],
+              label: "BALI",
+              borderColor: "#f06292",
+              fill: false
+            },
+            {
+              data: [3827, 3651, 5011, 5398],
+              label: "NUSA TENGGARA BARAT",
+              borderColor: "#ba68c8",
+              fill: false
+            },
+            {
+              data: [4512, 4524, 5443, 5571],
+              label: "NUSA TENGGARA TIMUR",
+              borderColor: "#ef5350",
+              fill: false
+            },
+            {
+              data: [2855, 3354, 4881, 6283],
+              label: "KALIMANTAN BARAT",
+              borderColor: "#ec407a",
+              fill: false
+            },
+            {
+              data: [2093, 2138, 2319, 3756],
+              label: "KALIMANTAN TENGAH",
+              borderColor: "#ab47bc",
+              fill: false
+            },
+            {
+              data: [2407, 3206, 3335, 5892],
+              label: "KALIMANTAN SELATAN",
+              borderColor: "#ef5350",
+              fill: false
+            },
+            {
+              data: [3939, 5747, 7024, 8169],
+              label: "KALIMANTAN TIMUR",
+              borderColor: "#e91e63",
+              fill: false
+            },
+            {
+              data: [584, 488, 596, 1529],
+              label: "KALIMANTAN UTARA",
+              borderColor: "#9c27b0",
+              fill: false
+            },
+            {
+              data: [2595, 2690, 3257, 3559],
+              label: "SULAWESI UTARA",
+              borderColor: "#e53935",
+              fill: false
+            },
+            {
+              data: [1655, 1748, 3020, 4296],
+              label: "SULAWESI TENGAH",
+              borderColor: "#d81b60",
+              fill: false
+            },
+            {
+              data: [4519, 6245, 7506, 7731],
+              label: "SULAWESI SELATAN",
+              borderColor: "#8e24aa",
+              fill: false
+            },
+            {
+              data: [1099, 1312, 2398, 3324],
+              label: "SULAWESI TENGGARA",
+              borderColor: "#d32f2f",
+              fill: false
+            },
+            {
+              data: [1299, 1733, 1730, 2274],
+              label: "GORONTALO",
+              borderColor: "#c2185b",
+              fill: false
+            },
+            {
+              data: [414, 984, 1014, 1102],
+              label: "SULAWESI BARAT",
+              borderColor: "#7b1fa2",
+              fill: false
+            },
+            {
+              data: [1017, 1233, 1397, 1754],
+              label: "MALUKU",
+              borderColor: "#c62828",
+              fill: false
+            },
+            {
+              data: [535, 745, 1451, 1472],
+              label: "MALUKU UTARA",
+              borderColor: "#ad1457",
+              fill: false
+            },
+            {
+              data: [777, 784, 913, 1116],
+              label: "PAPUA BARAT",
+              borderColor: "#6a1b9a",
+              fill: false
+            },
+            {
+              data: [1594, 2551, 3876, 4701],
+              label: "PAPUA",
+              borderColor: "#d1c4e9",
+              fill: false
+            }
+          ];
+
+          this.renderLineChart();
           break;
+        default:
+          break;
+      }
+    },
+    checkMapChart(selected) {
+      switch (selected) {
+        case "2014":
+          this.dataMapChart = [
+            {
+              title: "ACEH",
+              id: "ID-AC",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SUMATERA UTARA",
+              id: "ID-SU",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SUMATERA BARAT",
+              id: "ID-SB",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "RIAU",
+              id: "ID-RI",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "JAMBI",
+              id: "ID-JA",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SUMATERA SELATAN",
+              id: "ID-SS",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "BENGKULU",
+              id: "ID-BE",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "LAMPUNG",
+              id: "ID-LA",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KEPULAUAN BANGKA BELITUNG",
+              id: "ID-BB",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "KEPULAUAN RIAU",
+              id: "ID-KR",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "DKI JAKARTA",
+              id: "ID-JK",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "JAWA BARAT",
+              id: "ID-JB",
+              color: "#66bb6a",
+              customData: "Cluster 3",
+              groupId: "3"
+            },
+            {
+              title: "JAWA TENGAH",
+              id: "ID-JT",
+              color: "#66bb6a",
+              customData: "Cluster 3",
+              groupId: "3"
+            },
+            {
+              title: "DI YOGYAKARTA",
+              id: "ID-YO",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "JAWA TIMUR",
+              id: "ID-JI",
+              color: "#66bb6a",
+              customData: "Cluster 3",
+              groupId: "3"
+            },
+            {
+              title: "BANTEN",
+              id: "ID-BT",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "BALI",
+              id: "ID-BA",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "NUSA TENGGARA BARAT",
+              id: "ID-NB",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "NUSA TENGGARA TIMUR",
+              id: "ID-NT",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KALIMANTAN BARAT",
+              id: "ID-KB",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KALIMANTAN TENGAH",
+              id: "ID-KT",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "KALIMANTAN SELATAN",
+              id: "ID-KS",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KALIMANTAN TIMUR",
+              id: "ID-KI",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KALIMANTAN UTARA",
+              id: "ID-KU",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "SULAWESI UTARA",
+              id: "ID-SA",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SULAWESI TENGAH",
+              id: "ID-ST",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SULAWESI SELATAN",
+              id: "ID-SN",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SULAWESI TENGGARA",
+              id: "ID-SG",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "GORONTALO",
+              id: "ID-GO",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "SULAWESI BARAT",
+              id: "ID-SR",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "MALUKU",
+              id: "ID-MA",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "MALUKU UTARA",
+              id: "ID-MU",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "PAPUA BARAT",
+              id: "ID-PB",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "PAPUA",
+              id: "ID-PA",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            }
+          ];
+
+          this.renderMapChart();
+          break;
+        case "2015":
+          this.dataMapChart = [
+            {
+              title: "ACEH",
+              id: "ID-AC",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SUMATERA UTARA",
+              id: "ID-SU",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SUMATERA BARAT",
+              id: "ID-SB",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "RIAU",
+              id: "ID-RI",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "JAMBI",
+              id: "ID-JA",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "SUMATERA SELATAN",
+              id: "ID-SS",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "BENGKULU",
+              id: "ID-BE",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "LAMPUNG",
+              id: "ID-LA",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "KEPULAUAN BANGKA BELITUNG",
+              id: "ID-BB",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "KEPULAUAN RIAU",
+              id: "ID-KR",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "DKI JAKARTA",
+              id: "ID-JK",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "JAWA BARAT",
+              id: "ID-JB",
+              color: "#66bb6a",
+              customData: "Cluster 3",
+              groupId: "3"
+            },
+            {
+              title: "JAWA TENGAH",
+              id: "ID-JT",
+              color: "#66bb6a",
+              customData: "Cluster 3",
+              groupId: "3"
+            },
+            {
+              title: "DI YOGYAKARTA",
+              id: "ID-YO",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "JAWA TIMUR",
+              id: "ID-JI",
+              color: "#66bb6a",
+              customData: "Cluster 3",
+              groupId: "3"
+            },
+            {
+              title: "BANTEN",
+              id: "ID-BT",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "BALI",
+              id: "ID-BA",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "NUSA TENGGARA BARAT",
+              id: "ID-NB",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "NUSA TENGGARA TIMUR",
+              id: "ID-NT",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "KALIMANTAN BARAT",
+              id: "ID-KB",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "KALIMANTAN TENGAH",
+              id: "ID-KT",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "KALIMANTAN SELATAN",
+              id: "ID-KS",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "KALIMANTAN TIMUR",
+              id: "ID-KI",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "KALIMANTAN UTARA",
+              id: "ID-KU",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "SULAWESI UTARA",
+              id: "ID-SA",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "SULAWESI TENGAH",
+              id: "ID-ST",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "SULAWESI SELATAN",
+              id: "ID-SN",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SULAWESI TENGGARA",
+              id: "ID-SG",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "GORONTALO",
+              id: "ID-GO",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "SULAWESI BARAT",
+              id: "ID-SR",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "MALUKU",
+              id: "ID-MA",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "MALUKU UTARA",
+              id: "ID-MU",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "PAPUA BARAT",
+              id: "ID-PB",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "PAPUA",
+              id: "ID-PA",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            }
+          ];
+
+          this.renderMapChart();
+          break;
+        case "2016":
+          this.dataMapChart = [
+            {
+              title: "ACEH",
+              id: "ID-AC",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SUMATERA UTARA",
+              id: "ID-SU",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SUMATERA BARAT",
+              id: "ID-SB",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "RIAU",
+              id: "ID-RI",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "JAMBI",
+              id: "ID-JA",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SUMATERA SELATAN",
+              id: "ID-SS",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "BENGKULU",
+              id: "ID-BE",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "LAMPUNG",
+              id: "ID-LA",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KEPULAUAN BANGKA BELITUNG",
+              id: "ID-BB",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "KEPULAUAN RIAU",
+              id: "ID-KR",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "DKI JAKARTA",
+              id: "ID-JK",
+              color: "#66bb6a",
+              customData: "Cluster 3",
+              groupId: "3"
+            },
+            {
+              title: "JAWA BARAT",
+              id: "ID-JB",
+              color: "#66bb6a",
+              customData: "Cluster 3",
+              groupId: "3"
+            },
+            {
+              title: "JAWA TENGAH",
+              id: "ID-JT",
+              color: "#66bb6a",
+              customData: "Cluster 3",
+              groupId: "3"
+            },
+            {
+              title: "DI YOGYAKARTA",
+              id: "ID-YO",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "JAWA TIMUR",
+              id: "ID-JI",
+              color: "#66bb6a",
+              customData: "Cluster 3",
+              groupId: "3"
+            },
+            {
+              title: "BANTEN",
+              id: "ID-BT",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "BALI",
+              id: "ID-BA",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "NUSA TENGGARA BARAT",
+              id: "ID-NB",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "NUSA TENGGARA TIMUR",
+              id: "ID-NT",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KALIMANTAN BARAT",
+              id: "ID-KB",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KALIMANTAN TENGAH",
+              id: "ID-KT",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "KALIMANTAN SELATAN",
+              id: "ID-KS",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KALIMANTAN TIMUR",
+              id: "ID-KI",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KALIMANTAN UTARA",
+              id: "ID-KU",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "SULAWESI UTARA",
+              id: "ID-SA",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "SULAWESI TENGAH",
+              id: "ID-ST",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SULAWESI SELATAN",
+              id: "ID-SN",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SULAWESI TENGGARA",
+              id: "ID-SG",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "GORONTALO",
+              id: "ID-GO",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "SULAWESI BARAT",
+              id: "ID-SR",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "MALUKU",
+              id: "ID-MA",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "MALUKU UTARA",
+              id: "ID-MU",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "PAPUA BARAT",
+              id: "ID-PB",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "PAPUA",
+              id: "ID-PA",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            }
+          ];
+
+          this.renderMapChart();
+          break;
+        case "2017":
+          this.dataMapChart = [
+            {
+              title: "ACEH",
+              id: "ID-AC",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SUMATERA UTARA",
+              id: "ID-SU",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SUMATERA BARAT",
+              id: "ID-SB",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "RIAU",
+              id: "ID-RI",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "JAMBI",
+              id: "ID-JA",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SUMATERA SELATAN",
+              id: "ID-SS",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "BENGKULU",
+              id: "ID-BE",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "LAMPUNG",
+              id: "ID-LA",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KEPULAUAN BANGKA BELITUNG",
+              id: "ID-BB",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "KEPULAUAN RIAU",
+              id: "ID-KR",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "DKI JAKARTA",
+              id: "ID-JK",
+              color: "#66bb6a",
+              customData: "Cluster 3",
+              groupId: "3"
+            },
+            {
+              title: "JAWA BARAT",
+              id: "ID-JB",
+              color: "#66bb6a",
+              customData: "Cluster 3",
+              groupId: "3"
+            },
+            {
+              title: "JAWA TENGAH",
+              id: "ID-JT",
+              color: "#66bb6a",
+              customData: "Cluster 3",
+              groupId: "3"
+            },
+            {
+              title: "DI YOGYAKARTA",
+              id: "ID-YO",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "JAWA TIMUR",
+              id: "ID-JI",
+              color: "#66bb6a",
+              customData: "Cluster 3",
+              groupId: "3"
+            },
+            {
+              title: "BANTEN",
+              id: "ID-BT",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "BALI",
+              id: "ID-BA",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "NUSA TENGGARA BARAT",
+              id: "ID-NB",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "NUSA TENGGARA TIMUR",
+              id: "ID-NT",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KALIMANTAN BARAT",
+              id: "ID-KB",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KALIMANTAN TENGAH",
+              id: "ID-KT",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KALIMANTAN SELATAN",
+              id: "ID-KS",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KALIMANTAN TIMUR",
+              id: "ID-KI",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "KALIMANTAN UTARA",
+              id: "ID-KU",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "SULAWESI UTARA",
+              id: "ID-SA",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "SULAWESI TENGAH",
+              id: "ID-ST",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SULAWESI SELATAN",
+              id: "ID-SN",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "SULAWESI TENGGARA",
+              id: "ID-SG",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            },
+            {
+              title: "GORONTALO",
+              id: "ID-GO",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "SULAWESI BARAT",
+              id: "ID-SR",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "MALUKU",
+              id: "ID-MA",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "MALUKU UTARA",
+              id: "ID-MU",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "PAPUA BARAT",
+              id: "ID-PB",
+              color: "#cddc39",
+              customData: "Cluster 2",
+              groupId: "2"
+            },
+            {
+              title: "PAPUA",
+              id: "ID-PA",
+              color: "#ef5350",
+              customData: "Cluster 1",
+              groupId: "1"
+            }
+          ];
+
+          this.renderMapChart();
+          break;
+
         default:
           break;
       }
@@ -478,318 +1670,83 @@ var app = new Vue({
           }
         }
       });
+    },
+    renderMapChart() {
+      //   Map Chart (amcharts js)
+
+      var map = AmCharts.makeChart("chartdiv", {
+        type: "map",
+        theme: "light",
+        dataProvider: {
+          map: "indonesiaLow",
+          areas: this.dataMapChart
+        },
+        balloon: {
+          borderThickness: 0,
+          borderAlpha: 0,
+          fillAlpha: 0,
+          horizontalPadding: 0,
+          verticalPadding: 0,
+          shadowAlpha: 0
+        },
+
+        areasSettings: {
+          rollOverOutlineColor: "#FFFFFF",
+          rollOverColor: "#29b6f6",
+          alpha: 0.8,
+          unlistedAreasAlpha: 0.1,
+          balloonText: "[[title]] : [[customData]]"
+        },
+
+        legend: {
+          width: "100%",
+          marginRight: 27,
+          marginLeft: 27,
+          equalWidths: false,
+          backgroundAlpha: 0.5,
+          backgroundColor: "#FFFFFF",
+          borderColor: "#ffffff",
+          borderAlpha: 1,
+          top: 410,
+          left: 0,
+          horizontalGap: 10,
+          data: [
+            {
+              title: "Cluster one",
+              color: "#ef5350"
+            },
+            {
+              title: "Cluster two",
+              color: "#cddc39"
+            },
+            {
+              title: "Cluster three",
+              color: "#66bb6a"
+            }
+          ]
+        },
+        export: {
+          enabled: true
+        }
+      });
     }
   },
   mounted() {
     this.checkLineChart(this.valueLineChart);
+    this.checkMapChart(this.valueMapChart);
   },
   watch: {
     valueLineChart: function(val) {
       this.valueLineChart = val;
     },
+    valueMapChart: function(val) {
+      this.valueMapChart = val;
+    },
     dataLineChart: function(val) {
       this.dataLineChart = val;
+    },
+    dataMapChart: function(val) {
+      this.dataMapChart = val;
     }
-  }
-});
-
-//   Map Chart (amcharts js)
-
-var map = AmCharts.makeChart("chartdiv", {
-  type: "map",
-  theme: "light",
-  dataProvider: {
-    map: "indonesiaLow",
-    areas: [
-      {
-        title: "ACEH",
-        id: "ID-AC",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "SUMATERA UTARA",
-        id: "ID-SU",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "SUMATERA BARAT",
-        id: "ID-SB",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "RIAU",
-        id: "ID-RI",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "JAMBI",
-        id: "ID-JA",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "SUMATERA SELATAN",
-        id: "ID-SS",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "BENGKULU",
-        id: "ID-BE",
-        color: "#ebdb8b",
-        customData: "Cluster 2",
-        groupId: "2"
-      },
-      {
-        title: "LAMPUNG",
-        id: "ID-LA",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "KEPULAUAN BANGKA BELITUNG",
-        id: "ID-BB",
-        color: "#ebdb8b",
-        customData: "Cluster 2",
-        groupId: "2"
-      },
-      {
-        title: "KEPULAUAN RIAU",
-        id: "ID-KR",
-        color: "#ebdb8b",
-        customData: "Cluster 2",
-        groupId: "2"
-      },
-      {
-        title: "DKI JAKARTA",
-        id: "ID-JK",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "JAWA BARAT",
-        id: "ID-JB",
-        color: "#83c2ba",
-        customData: "Cluster 3",
-        groupId: "3"
-      },
-      {
-        title: "JAWA TENGAH",
-        id: "ID-JT",
-        color: "#83c2ba",
-        customData: "Cluster 3",
-        groupId: "3"
-      },
-      {
-        title: "DI YOGYAKARTA",
-        id: "ID-YO",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "JAWA TIMUR",
-        id: "ID-JI",
-        color: "#83c2ba",
-        customData: "Cluster 3",
-        groupId: "3"
-      },
-      {
-        title: "BANTEN",
-        id: "ID-BT",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "BALI",
-        id: "ID-BA",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "NUSA TENGGARA BARAT",
-        id: "ID-NB",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "NUSA TENGGARA TIMUR",
-        id: "ID-NT",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "KALIMANTAN BARAT",
-        id: "ID-KB",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "KALIMANTAN TENGAH",
-        id: "ID-KT",
-        color: "#ebdb8b",
-        customData: "Cluster 2",
-        groupId: "2"
-      },
-      {
-        title: "KALIMANTAN SELATAN",
-        id: "ID-KS",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "KALIMANTAN TIMUR",
-        id: "ID-KI",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "KALIMANTAN UTARA",
-        id: "ID-KU",
-        color: "#ebdb8b",
-        customData: "Cluster 2",
-        groupId: "2"
-      },
-      {
-        title: "SULAWESI UTARA",
-        id: "ID-SA",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "SULAWESI TENGAH",
-        id: "ID-ST",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "SULAWESI SELATAN",
-        id: "ID-SN",
-        color: "#67b7dc",
-        customData: "Cluster 1",
-        groupId: "1"
-      },
-      {
-        title: "SULAWESI TENGGARA",
-        id: "ID-SG",
-        color: "#ebdb8b",
-        customData: "Cluster 2",
-        groupId: "2"
-      },
-      {
-        title: "GORONTALO",
-        id: "ID-GO",
-        color: "#ebdb8b",
-        customData: "Cluster 2",
-        groupId: "2"
-      },
-      {
-        title: "SULAWESI BARAT",
-        id: "ID-SR",
-        color: "#ebdb8b",
-        customData: "Cluster 2",
-        groupId: "2"
-      },
-      {
-        title: "MALUKU",
-        id: "ID-MA",
-        color: "#ebdb8b",
-        customData: "Cluster 2",
-        groupId: "2"
-      },
-      {
-        title: "MALUKU UTARA",
-        id: "ID-MU",
-        color: "#ebdb8b",
-        customData: "Cluster 2",
-        groupId: "2"
-      },
-      {
-        title: "PAPUA BARAT",
-        id: "ID-PB",
-        color: "#ebdb8b",
-        customData: "Cluster 2",
-        groupId: "2"
-      },
-      {
-        title: "PAPUA",
-        id: "ID-PA",
-        color: "#ebdb8b",
-        customData: "Cluster 2",
-        groupId: "2"
-      }
-    ]
-  },
-  balloon: {
-    borderThickness: 0,
-    borderAlpha: 0,
-    fillAlpha: 0,
-    horizontalPadding: 0,
-    verticalPadding: 0,
-    shadowAlpha: 0
-  },
-
-  areasSettings: {
-    rollOverOutlineColor: "#FFFFFF",
-    rollOverColor: "#CC0000",
-    alpha: 0.8,
-    unlistedAreasAlpha: 0.1,
-    balloonText: "[[title]] : [[customData]]"
-  },
-
-  legend: {
-    width: "100%",
-    marginRight: 27,
-    marginLeft: 27,
-    equalWidths: false,
-    backgroundAlpha: 0.5,
-    backgroundColor: "#FFFFFF",
-    borderColor: "#ffffff",
-    borderAlpha: 1,
-    top: 410,
-    left: 0,
-    horizontalGap: 10,
-    data: [
-      {
-        title: "Cluster 1",
-        color: "#67b7dc"
-      },
-      {
-        title: "Cluster 2",
-        color: "#ebdb8b"
-      },
-      {
-        title: "Cluster 3",
-        color: "#83c2ba"
-      },
-      {
-        title: "Cluster 4",
-        color: "#db8383"
-      }
-    ]
-  },
-  export: {
-    enabled: true
   }
 });
