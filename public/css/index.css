@@ -1,0 +1,10 @@
+#chart-line div,
+#chart-map div {
+  margin-top: 2%;
+  padding: 10px;
+  border-radius: 5px;
+}
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}

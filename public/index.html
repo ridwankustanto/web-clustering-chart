@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chart for Medical Expert</title>
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+</head>
+
+<body class="bg-primary">
+    <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Web Chart</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#chart-line">Chart Line</a>
+                <a class="nav-item nav-link" href="#chart-map">Chart Map</a>
+            </div>
+        </div>
+    </nav> -->
+
+    <div class="container-fluid" id="app">
+        <div class="row" id="chart-line">
+            <div class="col-md-8 offset-md-2 bg-light">
+                <p>{{titleLine}}</p>
+                <div class="input-group">
+                    <select v-model="valueLineChart" class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option v-for="opt in optExpert">{{opt.value}}</option>
+                    </select>
+                </div>
+                <canvas id="line-chart" width="700" height="450"></canvas>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row" id="chart-map" style="margin-bottom: 5%;">
+            <div class="col-md-8 offset-md-2 bg-light">
+                <p>{{titleMap}}</p>
+                <div class="input-group">
+                    <select v-model="valueMapChart" class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option v-for="opt in optYear">{{opt.value}}</option>
+                    </select>
+                </div>
+                <div id="chartdiv"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+    <script src="https://www.amcharts.com/lib/3/maps/js/indonesiaLow.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
