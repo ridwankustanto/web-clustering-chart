@@ -37,9 +37,12 @@
                     </select>
                 </div>
                 <p class="text-center">JUMLAH {{valueLineChart}}</p>
-                <button @click="checkLineChart(valueLineChart)" type="button" class="btn btn-primary btn-sm mx-auto d-block">Cek Laporan</button>
+                <button @click="checkLineChart(valueLineChart)" type="button" class="btn btn-primary btn-sm mx-auto d-block">Cek
+                    Laporan</button>
                 <br>
-                <canvas id="line-chart" width="700" height="450"></canvas>
+                <div id="canvas-line-chart">
+                    <canvas id="line-chart" width="700" height="500"></canvas>
+                </div>
             </div>
         </div>
 
@@ -50,11 +53,11 @@
                 <p>{{titleMap}}</p>
                 <div class="input-group" style="margin-bottom: 1%">
                     <select v-model="valueMapChart" class="custom-select" id="inputGroupSelect01">
-                        <option selected>Choose...</option>
                         <option v-for="opt in optYear">{{opt.value}}</option>
                     </select>
                 </div>
-                <button @click="checkMapChart(valueMapChart)" type="button" class="btn btn-primary btn-sm mx-auto d-block">Cek Laporan</button>
+                <button @click="checkMapChart(valueMapChart)" type="button" class="btn btn-primary btn-sm mx-auto d-block">Cek
+                    Laporan</button>
                 <div id="chartdiv"></div>
             </div>
         </div>

@@ -1,3 +1,5 @@
+Vue.prototype.$lineChart = "created";
+
 var app = new Vue({
   el: "#app",
   data: {
@@ -235,7 +237,7 @@ var app = new Vue({
             }
           ];
 
-          this.renderLineChart();
+          this.initLineChart();
           break;
         case "DOKTER UMUM":
           this.dataLineChart = [
@@ -448,14 +450,1054 @@ var app = new Vue({
           this.renderLineChart();
           break;
         case "DOKTER GIGI DAN SPESIALIS":
+          this.dataLineChart = [
+            {
+              data: [280, 298, 321, 377],
+              label: "ACEH",
+              borderColor: "#3e95cd",
+              fill: false
+            },
+            {
+              data: [914, 935, 852, 870],
+              label: "SUMATERA UTARA",
+              borderColor: "#8e5ea2",
+              fill: false
+            },
+            {
+              data: [410, 415, 405, 411],
+              label: "SUMATERA BARAT",
+              borderColor: "#3cba9f",
+              fill: false
+            },
+            {
+              data: [391, 367, 99, 426],
+              label: "RIAU",
+              borderColor: "#e8c3b9",
+              fill: false
+            },
+            {
+              data: [189, 178, 206, 202],
+              label: "JAMBI",
+              borderColor: "#c45850",
+              fill: false
+            },
+            {
+              data: [221, 267, 272, 291],
+              label: "SUMATERA SELATAN",
+              borderColor: "#a05c5c",
+              fill: false
+            },
+            {
+              data: [1111, 94, 116, 123],
+              label: "BENGKULU",
+              borderColor: "#ffebee",
+              fill: false
+            },
+            {
+              data: [274, 297, 221, 233],
+              label: "LAMPUNG",
+              borderColor: "#fce4ec",
+              fill: false
+            },
+            {
+              data: [62, 89, 88, 91],
+              label: "KEPULAUAN BANGKA BELITUNG",
+              borderColor: "#f3e5f5",
+              fill: false
+            },
+            {
+              data: [143, 145, 107, 136],
+              label: "KEPULAUAN RIAU",
+              borderColor: "#ffcdd2",
+              fill: false
+            },
+            {
+              data: [1482, 1065, 1392, 1775],
+              label: "DKI JAKARTA",
+              borderColor: "#f8bbd0",
+              fill: false
+            },
+            {
+              data: [1766, 1925, 2092, 2200],
+              label: "JAWA BARAT",
+              borderColor: "#e1bee7",
+              fill: false
+            },
+            {
+              data: [1376, 1376, 1264, 1303],
+              label: "JAWA TENGAH",
+              borderColor: "#ef9a9a",
+              fill: false
+            },
+            {
+              data: [455, 371, 414, 560],
+              label: "DI YOGYAKARTA",
+              borderColor: "#f48fb1",
+              fill: false
+            },
+            {
+              data: [1683, 1602, 1640, 1738],
+              label: "JAWA TIMUR",
+              borderColor: "#ce93d8",
+              fill: false
+            },
+            {
+              data: [572, 557, 590, 668],
+              label: "BANTEN",
+              borderColor: "#e57373",
+              fill: false
+            },
+            {
+              data: [303, 323, 418, 440],
+              label: "BALI",
+              borderColor: "#f06292",
+              fill: false
+            },
+            {
+              data: [162, 132, 159, 149],
+              label: "NUSA TENGGARA BARAT",
+              borderColor: "#ba68c8",
+              fill: false
+            },
+            {
+              data: [161, 154, 170, 183],
+              label: "NUSA TENGGARA TIMUR",
+              borderColor: "#ef5350",
+              fill: false
+            },
+            {
+              data: [134, 153, 165, 177],
+              label: "KALIMANTAN BARAT",
+              borderColor: "#ec407a",
+              fill: false
+            },
+            {
+              data: [101, 103, 109, 111],
+              label: "KALIMANTAN TENGAH",
+              borderColor: "#ab47bc",
+              fill: false
+            },
+            {
+              data: [182, 175, 204, 272],
+              label: "KALIMANTAN SELATAN",
+              borderColor: "#f44336",
+              fill: false
+            },
+            {
+              data: [282, 271, 317, 346],
+              label: "KALIMANTAN TIMUR",
+              borderColor: "#e91e63",
+              fill: false
+            },
+            {
+              data: [68, 54, 54, 63],
+              label: "KALIMANTAN UTARA",
+              borderColor: "#9c27b0",
+              fill: false
+            },
+            {
+              data: [74, 89, 99, 105],
+              label: "SULAWESI UTARA",
+              borderColor: "#e53935",
+              fill: false
+            },
+            {
+              data: [107, 117, 132, 134],
+              label: "SULAWESI TENGAH",
+              borderColor: "#d81b60",
+              fill: false
+            },
+            {
+              data: [604, 634, 726, 754],
+              label: "SULAWESI SELATAN",
+              borderColor: "#8e24aa",
+              fill: false
+            },
+            {
+              data: [119, 118, 155, 182],
+              label: "SULAWESI TENGGARA",
+              borderColor: "#d32f2f",
+              fill: false
+            },
+            {
+              data: [39, 48, 50, 55],
+              label: "GORONTALO",
+              borderColor: "#c2185b",
+              fill: false
+            },
+            {
+              data: [100, 72, 81, 82],
+              label: "SULAWESI BARAT",
+              borderColor: "#7b1fa2",
+              fill: false
+            },
+            {
+              data: [123, 97, 35, 57],
+              label: "MALUKU",
+              borderColor: "#c62828",
+              fill: false
+            },
+            {
+              data: [49, 55, 43, 47],
+              label: "MALUKU UTARA",
+              borderColor: "#ad1457",
+              fill: false
+            },
+            {
+              data: [51, 41, 38, 40],
+              label: "PAPUA BARAT",
+              borderColor: "#6a1b9a",
+              fill: false
+            },
+            {
+              data: [104, 123, 101, 106],
+              label: "PAPUA",
+              borderColor: "#d1c4e9",
+              fill: false
+            }
+          ];
+
+          this.renderLineChart();
           break;
         case "KEPERAWATAN":
+          this.dataLineChart = [
+            {
+              data: [10890, 8421, 10466, 12369],
+              label: "ACEH",
+              borderColor: "#3e95cd",
+              fill: false
+            },
+            {
+              data: [17247, 10009, 14824, 15582],
+              label: "SUMATERA UTARA",
+              borderColor: "#8e5ea2",
+              fill: false
+            },
+            {
+              data: [7513, 5852, 7617, 7807],
+              label: "SUMATERA BARAT",
+              borderColor: "#3cba9f",
+              fill: false
+            },
+            {
+              data: [6986, 5562, 8107, 8246],
+              label: "RIAU",
+              borderColor: "#e8c3b9",
+              fill: false
+            },
+            {
+              data: [5313, 3694, 6452, 6980],
+              label: "JAMBI",
+              borderColor: "#c45850",
+              fill: false
+            },
+            {
+              data: [8809, 9068, 11437, 12589],
+              label: "SUMATERA SELATAN",
+              borderColor: "#a05c5c",
+              fill: false
+            },
+            {
+              data: [3258, 2693, 3600, 4211],
+              label: "BENGKULU",
+              borderColor: "#ffebee",
+              fill: false
+            },
+            {
+              data: [6805, 4120, 4057, 8252],
+              label: "LAMPUNG",
+              borderColor: "#fce4ec",
+              fill: false
+            },
+            {
+              data: [2555, 2397, 2896, 3024],
+              label: "KEPULAUAN BANGKA BELITUNG",
+              borderColor: "#f3e5f5",
+              fill: false
+            },
+            {
+              data: [3932, 2401, 2786, 3286],
+              label: "KEPULAUAN RIAU",
+              borderColor: "#ffcdd2",
+              fill: false
+            },
+            {
+              data: [19335, 11729, 22982, 25834],
+              label: "DKI JAKARTA",
+              borderColor: "#f8bbd0",
+              fill: false
+            },
+            {
+              data: [30405, 22282, 33527, 37855],
+              label: "JAWA BARAT",
+              borderColor: "#e1bee7",
+              fill: false
+            },
+            {
+              data: [31632, 29154, 35773, 39225],
+              label: "JAWA TENGAH",
+              borderColor: "#ef9a9a",
+              fill: false
+            },
+            {
+              data: [6739, 4516, 6353, 8159],
+              label: "DI YOGYAKARTA",
+              borderColor: "#f48fb1",
+              fill: false
+            },
+            {
+              data: [32815, 27047, 33377, 39614],
+              label: "JAWA TIMUR",
+              borderColor: "#ce93d8",
+              fill: false
+            },
+            {
+              data: [7882, 8072, 8973, 9140],
+              label: "BANTEN",
+              borderColor: "#e57373",
+              fill: false
+            },
+            {
+              data: [6458, 4178, 6764, 8455],
+              label: "BALI",
+              borderColor: "#f06292",
+              fill: false
+            },
+            {
+              data: [5041, 3882, 5391, 6199],
+              label: "NUSA TENGGARA BARAT",
+              borderColor: "#ba68c8",
+              fill: false
+            },
+            {
+              data: [6422, 4896, 6583, 6831],
+              label: "NUSA TENGGARA TIMUR",
+              borderColor: "#ef5350",
+              fill: false
+            },
+            {
+              data: [9467, 4276, 5433, 7690],
+              label: "KALIMANTAN BARAT",
+              borderColor: "#ec407a",
+              fill: false
+            },
+            {
+              data: [4602, 3885, 4279, 5577],
+              label: "KALIMANTAN TENGAH",
+              borderColor: "#ab47bc",
+              fill: false
+            },
+            {
+              data: [6205, 3992, 4553, 7352],
+              label: "KALIMANTAN SELATAN",
+              borderColor: "#f44336",
+              fill: false
+            },
+            {
+              data: [5635, 6412, 7254, 8049],
+              label: "KALIMANTAN TIMUR",
+              borderColor: "#e91e63",
+              fill: false
+            },
+            {
+              data: [1498, 1355, 1184, 1943],
+              label: "KALIMANTAN UTARA",
+              borderColor: "#9c27b0",
+              fill: false
+            },
+            {
+              data: [5635, 3432, 4802, 6034],
+              label: "SULAWESI UTARA",
+              borderColor: "#e53935",
+              fill: false
+            },
+            {
+              data: [6804, 4033, 4530, 6887],
+              label: "SULAWESI TENGAH",
+              borderColor: "#d81b60",
+              fill: false
+            },
+            {
+              data: [12195, 11174, 12448, 13033],
+              label: "SULAWESI SELATAN",
+              borderColor: "#8e24aa",
+              fill: false
+            },
+            {
+              data: [3801, 2724, 4325, 5563],
+              label: "SULAWESI TENGGARA",
+              borderColor: "#d32f2f",
+              fill: false
+            },
+            {
+              data: [1598, 1086, 1693, 1953],
+              label: "GORONTALO",
+              borderColor: "#c2185b",
+              fill: false
+            },
+            {
+              data: [1616, 1769, 1675, 2033],
+              label: "SULAWESI BARAT",
+              borderColor: "#7b1fa2",
+              fill: false
+            },
+            {
+              data: [5075, 2645, 3475, 4120],
+              label: "MALUKU",
+              borderColor: "#c62828",
+              fill: false
+            },
+            {
+              data: [3123, 1808, 2049, 2181],
+              label: "MALUKU UTARA",
+              borderColor: "#ad1457",
+              fill: false
+            },
+            {
+              data: [2710, 1449, 1478, 2034],
+              label: "PAPUA BARAT",
+              borderColor: "#6a1b9a",
+              fill: false
+            },
+            {
+              data: [5507, 3897, 5733, 7184],
+              label: "PAPUA",
+              borderColor: "#d1c4e9",
+              fill: false
+            }
+          ];
+
+          this.renderLineChart();
           break;
         case "KEBIDANAN":
+          this.dataLineChart = [
+            {
+              data: [9545, 6217, 8788, 11723],
+              label: "ACEH",
+              borderColor: "#3e95cd",
+              fill: false
+            },
+            {
+              data: [13585, 8758, 15338, 16241],
+              label: "SUMATERA UTARA",
+              borderColor: "#8e5ea2",
+              fill: false
+            },
+            {
+              data: [4626, 4303, 5641, 5848],
+              label: "SUMATERA BARAT",
+              borderColor: "#3cba9f",
+              fill: false
+            },
+            {
+              data: [4476, 4327, 6250, 6323],
+              label: "RIAU",
+              borderColor: "#e8c3b9",
+              fill: false
+            },
+            {
+              data: [3253, 2468, 4523, 4344],
+              label: "JAMBI",
+              borderColor: "#c45850",
+              fill: false
+            },
+            {
+              data: [4808, 7021, 8735, 10712],
+              label: "SUMATERA SELATAN",
+              borderColor: "#a05c5c",
+              fill: false
+            },
+            {
+              data: [2550, 2485, 3091, 3466],
+              label: "BENGKULU",
+              borderColor: "#ffebee",
+              fill: false
+            },
+            {
+              data: [3761, 2477, 3449, 7695],
+              label: "LAMPUNG",
+              borderColor: "#fce4ec",
+              fill: false
+            },
+            {
+              data: [897, 925, 1145, 1171],
+              label: "KEPULAUAN BANGKA BELITUNG",
+              borderColor: "#f3e5f5",
+              fill: false
+            },
+            {
+              data: [1170, 985, 1169, 1549],
+              label: "KEPULAUAN RIAU",
+              borderColor: "#ffcdd2",
+              fill: false
+            },
+            {
+              data: [2869, 2159, 4458, 5052],
+              label: "DKI JAKARTA",
+              borderColor: "#f8bbd0",
+              fill: false
+            },
+            {
+              data: [12956, 9705, 17629, 20519],
+              label: "JAWA BARAT",
+              borderColor: "#e1bee7",
+              fill: false
+            },
+            {
+              data: [16776, 12573, 17670, 20201],
+              label: "JAWA TENGAH",
+              borderColor: "#ef9a9a",
+              fill: false
+            },
+            {
+              data: [1693, 977, 1508, 1964],
+              label: "DI YOGYAKARTA",
+              borderColor: "#f48fb1",
+              fill: false
+            },
+            {
+              data: [15543, 14499, 18126, 20509],
+              label: "JAWA TIMUR",
+              borderColor: "#ce93d8",
+              fill: false
+            },
+            {
+              data: [3497, 4949, 5404, 5170],
+              label: "BANTEN",
+              borderColor: "#e57373",
+              fill: false
+            },
+            {
+              data: [2228, 1823, 3597, 4466],
+              label: "BALI",
+              borderColor: "#f06292",
+              fill: false
+            },
+            {
+              data: [2201, 1707, 2966, 3741],
+              label: "NUSA TENGGARA BARAT",
+              borderColor: "#ba68c8",
+              fill: false
+            },
+            {
+              data: [3139, 1900, 3991, 4475],
+              label: "NUSA TENGGARA TIMUR",
+              borderColor: "#ef5350",
+              fill: false
+            },
+            {
+              data: [2308, 1974, 2702, 3778],
+              label: "KALIMANTAN BARAT",
+              borderColor: "#ec407a",
+              fill: false
+            },
+            {
+              data: [1846, 1424, 1865, 2910],
+              label: "KALIMANTAN TENGAH",
+              borderColor: "#ab47bc",
+              fill: false
+            },
+            {
+              data: [2751, 1873, 2087, 5226],
+              label: "KALIMANTAN SELATAN",
+              borderColor: "#f44336",
+              fill: false
+            },
+            {
+              data: [1843, 2225, 2878, 3294],
+              label: "KALIMANTAN TIMUR",
+              borderColor: "#e91e63",
+              fill: false
+            },
+            {
+              data: [501, 471, 364, 934],
+              label: "KALIMANTAN UTARA",
+              borderColor: "#9c27b0",
+              fill: false
+            },
+            {
+              data: [1467, 789, 1184, 1518],
+              label: "SULAWESI UTARA",
+              borderColor: "#e53935",
+              fill: false
+            },
+            {
+              data: [2524, 1419, 2628, 4388],
+              label: "SULAWESI TENGAH",
+              borderColor: "#d81b60",
+              fill: false
+            },
+            {
+              data: [5224, 4585, 5775, 6746],
+              label: "SULAWESI SELATAN",
+              borderColor: "#8e24aa",
+              fill: false
+            },
+            {
+              data: [1769, 1096, 2986, 4391],
+              label: "SULAWESI TENGGARA",
+              borderColor: "#d32f2f",
+              fill: false
+            },
+            {
+              data: [680, 725, 1038, 1226],
+              label: "GORONTALO",
+              borderColor: "#c2185b",
+              fill: false
+            },
+            {
+              data: [895, 1218, 1335, 1691],
+              label: "SULAWESI BARAT",
+              borderColor: "#7b1fa2",
+              fill: false
+            },
+            {
+              data: [1323, 812, 1167, 1505],
+              label: "MALUKU",
+              borderColor: "#c62828",
+              fill: false
+            },
+            {
+              data: [1086, 1279, 1708, 1757],
+              label: "MALUKU UTARA",
+              borderColor: "#ad1457",
+              fill: false
+            },
+            {
+              data: [895, 456, 552, 830],
+              label: "PAPUA BARAT",
+              borderColor: "#6a1b9a",
+              fill: false
+            },
+            {
+              data: [1921, 1132, 1794, 2747],
+              label: "PAPUA",
+              borderColor: "#d1c4e9",
+              fill: false
+            }
+          ];
+
+          this.renderLineChart();
           break;
         case "FARMASI":
+          this.dataLineChart = [
+            {
+              data: [1968, 1165, 1220, 1315],
+              label: "ACEH",
+              borderColor: "#3e95cd",
+              fill: false
+            },
+            {
+              data: [2582, 1478, 1604, 1659],
+              label: "SUMATERA UTARA",
+              borderColor: "#8e5ea2",
+              fill: false
+            },
+            {
+              data: [1518, 924, 1095, 1173],
+              label: "SUMATERA BARAT",
+              borderColor: "#3cba9f",
+              fill: false
+            },
+            {
+              data: [1280, 949, 1082, 1129],
+              label: "RIAU",
+              borderColor: "#e8c3b9",
+              fill: false
+            },
+            {
+              data: [1020, 516, 703, 813],
+              label: "JAMBI",
+              borderColor: "#c45850",
+              fill: false
+            },
+            {
+              data: [1272, 1059, 1329, 1493],
+              label: "SUMATERA SELATAN",
+              borderColor: "#a05c5c",
+              fill: false
+            },
+            {
+              data: [928, 284, 407, 486],
+              label: "BENGKULU",
+              borderColor: "#ffebee",
+              fill: false
+            },
+            {
+              data: [748, 488, 445, 759],
+              label: "LAMPUNG",
+              borderColor: "#fce4ec",
+              fill: false
+            },
+            {
+              data: [311, 266, 327, 361],
+              label: "KEPULAUAN BANGKA BELITUNG",
+              borderColor: "#f3e5f5",
+              fill: false
+            },
+            {
+              data: [332, 231, 324, 350],
+              label: "KEPULAUAN RIAU",
+              borderColor: "#ffcdd2",
+              fill: false
+            },
+            {
+              data: [2761, 2629, 4617, 5243],
+              label: "DKI JAKARTA",
+              borderColor: "#f8bbd0",
+              fill: false
+            },
+            {
+              data: [3922, 3243, 4789, 5305],
+              label: "JAWA BARAT",
+              borderColor: "#e1bee7",
+              fill: false
+            },
+            {
+              data: [6537, 3608, 4558, 5606],
+              label: "JAWA TENGAH",
+              borderColor: "#ef9a9a",
+              fill: false
+            },
+            {
+              data: [2295, 689, 1078, 1777],
+              label: "DI YOGYAKARTA",
+              borderColor: "#f48fb1",
+              fill: false
+            },
+            {
+              data: [6227, 3839, 4609, 5368],
+              label: "JAWA TIMUR",
+              borderColor: "#ce93d8",
+              fill: false
+            },
+            {
+              data: [1108, 1219, 1303, 1384],
+              label: "BANTEN",
+              borderColor: "#e57373",
+              fill: false
+            },
+            {
+              data: [759, 406, 738, 902],
+              label: "BALI",
+              borderColor: "#f06292",
+              fill: false
+            },
+            {
+              data: [575, 392, 524, 623],
+              label: "NUSA TENGGARA BARAT",
+              borderColor: "#ba68c8",
+              fill: false
+            },
+            {
+              data: [1202, 615, 725, 775],
+              label: "NUSA TENGGARA TIMUR",
+              borderColor: "#ef5350",
+              fill: false
+            },
+            {
+              data: [739, 542, 693, 959],
+              label: "KALIMANTAN BARAT",
+              borderColor: "#ec407a",
+              fill: false
+            },
+            {
+              data: [542, 377, 373, 520],
+              label: "KALIMANTAN TENGAH",
+              borderColor: "#ab47bc",
+              fill: false
+            },
+            {
+              data: [987, 505, 622, 975],
+              label: "KALIMANTAN SELATAN",
+              borderColor: "#f44336",
+              fill: false
+            },
+            {
+              data: [800, 716, 892, 1068],
+              label: "KALIMANTAN TIMUR",
+              borderColor: "#e91e63",
+              fill: false
+            },
+            {
+              data: [201, 120, 97, 243],
+              label: "KALIMANTAN UTARA",
+              borderColor: "#9c27b0",
+              fill: false
+            },
+            {
+              data: [824, 428, 474, 546],
+              label: "SULAWESI UTARA",
+              borderColor: "#e53935",
+              fill: false
+            },
+            {
+              data: [798, 556, 566, 811],
+              label: "SULAWESI TENGAH",
+              borderColor: "#d81b60",
+              fill: false
+            },
+            {
+              data: [1675, 1378, 1483, 1591],
+              label: "SULAWESI SELATAN",
+              borderColor: "#8e24aa",
+              fill: false
+            },
+            {
+              data: [558, 389, 579, 735],
+              label: "SULAWESI TENGGARA",
+              borderColor: "#d32f2f",
+              fill: false
+            },
+            {
+              data: [360, 225, 217, 248],
+              label: "GORONTALO",
+              borderColor: "#c2185b",
+              fill: false
+            },
+            {
+              data: [254, 170, 183, 227],
+              label: "SULAWESI BARAT",
+              borderColor: "#7b1fa2",
+              fill: false
+            },
+            {
+              data: [203, 184, 212, 318],
+              label: "MALUKU",
+              borderColor: "#c62828",
+              fill: false
+            },
+            {
+              data: [258, 199, 271, 297],
+              label: "MALUKU UTARA",
+              borderColor: "#ad1457",
+              fill: false
+            },
+            {
+              data: [279, 149, 162, 185],
+              label: "PAPUA BARAT",
+              borderColor: "#6a1b9a",
+              fill: false
+            },
+            {
+              data: [513, 391, 528, 599],
+              label: "PAPUA",
+              borderColor: "#d1c4e9",
+              fill: false
+            }
+          ];
+
+          this.renderLineChart();
           break;
         case "NAKES LAINYA":
+          this.dataLineChart = [
+            {
+              data: [7613, 12995, 10430, 6564],
+              label: "ACEH",
+              borderColor: "#3e95cd",
+              fill: false
+            },
+            {
+              data: [7378, 14890, 5756, 5858],
+              label: "SUMATERA UTARA",
+              borderColor: "#8e5ea2",
+              fill: false
+            },
+            {
+              data: [4499, 4344, 3727, 3936],
+              label: "SUMATERA BARAT",
+              borderColor: "#3cba9f",
+              fill: false
+            },
+            {
+              data: [3159, 2777, 2930, 3043],
+              label: "RIAU",
+              borderColor: "#e8c3b9",
+              fill: false
+            },
+            {
+              data: [3220, 3775, 2197, 2532],
+              label: "JAMBI",
+              borderColor: "#c45850",
+              fill: false
+            },
+            {
+              data: [6074, 6209, 4537, 5293],
+              label: "SUMATERA SELATAN",
+              borderColor: "#a05c5c",
+              fill: false
+            },
+            {
+              data: [2664, 1953, 1939, 2127],
+              label: "BENGKULU",
+              borderColor: "#ffebee",
+              fill: false
+            },
+            {
+              data: [3103, 6098, 2858, 3327],
+              label: "LAMPUNG",
+              borderColor: "#fce4ec",
+              fill: false
+            },
+            {
+              data: [1076, 1783, 1114, 1128],
+              label: "KEPULAUAN BANGKA BELITUNG",
+              borderColor: "#f3e5f5",
+              fill: false
+            },
+            {
+              data: [1002, 2302, 856, 979],
+              label: "KEPULAUAN RIAU",
+              borderColor: "#ffcdd2",
+              fill: false
+            },
+            {
+              data: [4851, 4846, 8189, 8755],
+              label: "DKI JAKARTA",
+              borderColor: "#f8bbd0",
+              fill: false
+            },
+            {
+              data: [9140, 16650, 11382, 13005],
+              label: "JAWA BARAT",
+              borderColor: "#e1bee7",
+              fill: false
+            },
+            {
+              data: [13400, 19702, 12895, 14067],
+              label: "JAWA TENGAH",
+              borderColor: "#ef9a9a",
+              fill: false
+            },
+            {
+              data: [3067, 3139, 2658, 3701],
+              label: "DI YOGYAKARTA",
+              borderColor: "#f48fb1",
+              fill: false
+            },
+            {
+              data: [11192, 11815, 11375, 12859],
+              label: "JAWA TIMUR",
+              borderColor: "#ce93d8",
+              fill: false
+            },
+            {
+              data: [2666, 3936, 3871, 3321],
+              label: "BANTEN",
+              borderColor: "#e57373",
+              fill: false
+            },
+            {
+              data: [2772, 3800, 2462, 2966],
+              label: "BALI",
+              borderColor: "#f06292",
+              fill: false
+            },
+            {
+              data: [2873, 2098, 2543, 2833],
+              label: "NUSA TENGGARA BARAT",
+              borderColor: "#ba68c8",
+              fill: false
+            },
+            {
+              data: [3648, 5636, 4217, 3760],
+              label: "NUSA TENGGARA TIMUR",
+              borderColor: "#ef5350",
+              fill: false
+            },
+            {
+              data: [2520, 6610, 4009, 3168],
+              label: "KALIMANTAN BARAT",
+              borderColor: "#ec407a",
+              fill: false
+            },
+            {
+              data: [2025, 3569, 2708, 1950],
+              label: "KALIMANTAN TENGAH",
+              borderColor: "#ab47bc",
+              fill: false
+            },
+            {
+              data: [3058, 4862, 4564, 3568],
+              label: "KALIMANTAN SELATAN",
+              borderColor: "#f44336",
+              fill: false
+            },
+            {
+              data: [1891, 1876, 1989, 2296],
+              label: "KALIMANTAN TIMUR",
+              borderColor: "#e91e63",
+              fill: false
+            },
+            {
+              data: [683, 627, 606, 734],
+              label: "KALIMANTAN UTARA",
+              borderColor: "#9c27b0",
+              fill: false
+            },
+            {
+              data: [1543, 3155, 1951, 1775],
+              label: "SULAWESI UTARA",
+              borderColor: "#e53935",
+              fill: false
+            },
+            {
+              data: [2603, 6090, 3326, 2643],
+              label: "SULAWESI TENGAH",
+              borderColor: "#d81b60",
+              fill: false
+            },
+            {
+              data: [7466, 7162, 6111, 6254],
+              label: "SULAWESI SELATAN",
+              borderColor: "#8e24aa",
+              fill: false
+            },
+            {
+              data: [2704, 4032, 3163, 3118],
+              label: "SULAWESI TENGGARA",
+              borderColor: "#d32f2f",
+              fill: false
+            },
+            {
+              data: [1276, 1084, 1044, 1227],
+              label: "GORONTALO",
+              borderColor: "#c2185b",
+              fill: false
+            },
+            {
+              data: [1259, 765, 679, 826],
+              label: "SULAWESI BARAT",
+              borderColor: "#7b1fa2",
+              fill: false
+            },
+            {
+              data: [1147, 2775, 1164, 1550],
+              label: "MALUKU",
+              borderColor: "#c62828",
+              fill: false
+            },
+            {
+              data: [1146, 1592, 1147, 1260],
+              label: "MALUKU UTARA",
+              borderColor: "#ad1457",
+              fill: false
+            },
+            {
+              data: [726, 2065, 1248, 1037],
+              label: "PAPUA BARAT",
+              borderColor: "#6a1b9a",
+              fill: false
+            },
+            {
+              data: [1905, 4568, 3486, 3558],
+              label: "PAPUA",
+              borderColor: "#d1c4e9",
+              fill: false
+            }
+          ];
+
+          this.renderLineChart();
           break;
         case "TENAGA PENUNJANG":
           this.dataLineChart = [
@@ -1655,9 +2697,16 @@ var app = new Vue({
       }
     },
     renderLineChart() {
-      // Line Chart (chart.js)
+      document.getElementById("line-chart").remove();
+      document
+        .getElementById("canvas-line-chart")
+        .insertAdjacentHTML('afterbegin', '<canvas id="line-chart" width="700" height="500"></canvas>');
 
+      this.initLineChart();
+    },
+    initLineChart() {
       new Chart(document.getElementById("line-chart"), {
+        // Line Chart (chart.js)
         type: "line",
         data: {
           labels: [2014, 2015, 2016, 2017],
@@ -1665,8 +2714,7 @@ var app = new Vue({
         },
         options: {
           title: {
-            display: false,
-            text: "Jumlah " + this.valueLineChart
+            display: false
           }
         }
       });
