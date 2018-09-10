@@ -2760,15 +2760,15 @@ var app = new Vue({
           horizontalGap: 10,
           data: [
             {
-              title: "Cluster one",
+              title: "Cluster 1",
               color: "#ef5350"
             },
             {
-              title: "Cluster two",
+              title: "Cluster 2",
               color: "#cddc39"
             },
             {
-              title: "Cluster three",
+              title: "Cluster 3",
               color: "#66bb6a"
             }
           ]
